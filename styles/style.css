@@ -218,7 +218,6 @@ main {
 ----------------------------- */
 .some-facts {
     margin-top: 130px;
-    display: none;
 }
 .facts-title {
     font-weight: 700;
@@ -392,6 +391,25 @@ footer p{
         position: relative;
         left: 0;
     }
+    .facts {
+        padding: 0 20px;
+    }
+    .facts-title {
+        font-size: 30px;
+    }
+    .cards {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .card {
+        padding: 45px 36px 59px 36px;
+    }
+    .card .number {
+        font-size: 30px;
+    }
+    .card .card-description {
+        font-size: 16px;
+    }
 
     .services {
         flex-direction: column;
@@ -411,25 +429,4 @@ footer p{
         flex-direction: column;
         gap: 50px;
     }
-
-    /* .facts {
-        padding: 0 20px;
-    }
-    .facts-title {
-        font-size: 30px;
-    }
-    .cards {
-        flex-direction: column;
-        gap: 30px;
-        display: none;
-    } */
-    /* .card {
-        padding: 45px 36px 59px 36px;
-    }
-    .card .number {
-        font-size: 30px;
-    }
-    .card .card-description {
-        font-size: 16px;
-    } */
 }

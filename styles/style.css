@@ -8,7 +8,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
 }
 .btn-primary {
@@ -26,6 +25,7 @@
  ---------------------*/
 header{
     background: rgba(255, 144, 14, 0.1);
+    width: 100%;
 }
 
 
@@ -135,7 +135,6 @@ main {
 .features-enjoy {
     margin-top: 130px;
     position: relative;
-    /* display: none; */
 }
 .features {
     display: flex;
@@ -267,7 +266,6 @@ main {
 ----------------------------*/
 .our-service {
     margin-top: 130px;
-    display: none;
 }
 .services {
     display: flex;
@@ -297,7 +295,6 @@ main {
  ------------------------*/
 .our-sponsors {
     margin-top: 180px;
-    display: none;
 }
 .sponsors {
     text-align: center;
@@ -336,13 +333,15 @@ footer p{
 }
 
 /*------------ Mobile Responsive--------  ---- */
-
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
     nav {
         flex-direction: column;
     }
     nav ul {
         flex-direction: column;
+    }
+    .header-info {
+        padding: 0 20px;
     }
     .header-title {
         font-size: 30px;
@@ -355,6 +354,7 @@ footer p{
     }
     main{
         max-width: 500px;
+        margin: 0 auto;
     }
     .quick-list {
         flex-direction: column;
@@ -368,12 +368,10 @@ footer p{
     .quick-info .title {
         font-size: 25px;
     }
-
     .features {
         flex-direction: column;
         gap: 50px;
         padding: 0 20px;
-        /* display: none; */
     }
     .features img {
         width: 100%;
@@ -386,15 +384,52 @@ footer p{
     }
     .project {
         padding: 0 20px;
-        /* display: none; */
     }
     .project .project-description {
         width: 300px;
-        /* display: none; */
     }
     .features-info .experience {
         position: relative;
         left: 0;
-        /* display: none; */
     }
+
+    .services {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 20px;
+    }
+    .services img {
+        width: 100%;
+    }
+    .services-info .title {
+        font-size: 30px;
+    }
+    .sponsors .sponsors-title  {
+        font-size: 30px;
+    }
+    .sponsor {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    /* .facts {
+        padding: 0 20px;
+    }
+    .facts-title {
+        font-size: 30px;
+    }
+    .cards {
+        flex-direction: column;
+        gap: 30px;
+        display: none;
+    } */
+    /* .card {
+        padding: 45px 36px 59px 36px;
+    }
+    .card .number {
+        font-size: 30px;
+    }
+    .card .card-description {
+        font-size: 16px;
+    } */
 }

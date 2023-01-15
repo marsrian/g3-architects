@@ -339,7 +339,7 @@ footer p{
         flex-direction: column;
     }
     .header-info,
-    .quick-info
+    .quick-info,
     .facts {
         padding: 0 20px;
     }

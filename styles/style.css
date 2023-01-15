@@ -21,7 +21,7 @@
 }
 
 /*--------------------
- header 
+     header 
  ---------------------*/
 header{
     background: rgba(255, 144, 14, 0.1);
@@ -29,7 +29,7 @@ header{
 }
 
 
-/* Logo */
+/* -----------Logo------------- */
 header nav .logo {
     font-weight: 700;
     font-size: 45px;
@@ -76,7 +76,7 @@ nav ul li {
     justify-self: center;
 }
 .banner-img {
-    width: 900px;
+    width: 1400px;
     border-radius: 8px;
     padding-bottom: 45px;
     justify-self: center;
@@ -331,40 +331,38 @@ footer p{
     text-align: center;
 }
 
-/*------------ Mobile Responsive--------  ---- */
+/*------------ Mobile Responsive-------------- */
 @media screen and (max-width: 576px) {
-    nav {
+    nav,
+    nav ul,
+    .quick-list {
         flex-direction: column;
     }
-    nav ul {
-        flex-direction: column;
-    }
-    .header-info {
+    .header-info,
+    .quick-info
+    .facts {
         padding: 0 20px;
     }
-    .header-title {
+    .header-title,
+    .facts-title, 
+    .card .number,
+    .services-info .title,
+    .sponsors .sponsors-title {
         font-size: 30px;
     }
-    .banner-img {
+    .banner-img, .features img {
         width: 100%;
     }
-    footer p {
-        font-size: 16px;
-    }
+    
     main{
         max-width: 500px;
         margin: 0 auto;
     }
-    .quick-list {
-        flex-direction: column;
-    }
     .member {
         grid-template-columns: repeat(1, 1fr);
     }
-    .quick-info {
-        padding: 0 20px;
-    }
-    .quick-info .title {
+    .quick-info .title,
+    .features-info .features-title {
         font-size: 25px;
     }
     .features {
@@ -372,17 +370,11 @@ footer p{
         gap: 50px;
         padding: 0 20px;
     }
-    .features img {
-        width: 100%;
-    }
-    .features-info .features-title {
-        font-size: 25px;
-    }
     .features-info .features-title::before {
         height: 60px;
     }
     .project {
-        padding: 0 20px;
+        padding: 30px 20px;
     }
     .project .project-description {
         width: 300px;
@@ -391,12 +383,6 @@ footer p{
         position: relative;
         left: 0;
     }
-    .facts {
-        padding: 0 20px;
-    }
-    .facts-title {
-        font-size: 30px;
-    }
     .cards {
         flex-direction: column;
         gap: 30px;
@@ -404,10 +390,8 @@ footer p{
     .card {
         padding: 45px 36px 59px 36px;
     }
-    .card .number {
-        font-size: 30px;
-    }
-    .card .card-description {
+    .card .card-description,
+    footer p {
         font-size: 16px;
     }
 
@@ -418,12 +402,6 @@ footer p{
     }
     .services img {
         width: 100%;
-    }
-    .services-info .title {
-        font-size: 30px;
-    }
-    .sponsors .sponsors-title  {
-        font-size: 30px;
     }
     .sponsor {
         flex-direction: column;
